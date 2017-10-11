@@ -1,0 +1,18 @@
+package com.djh.upload;
+
+import java.io.File;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class FileUpload extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private File upFile;
+	private String upFileContextType;
+	private String upFileName;
+
+}

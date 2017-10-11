@@ -1,0 +1,14 @@
+package com.djh;
+
+import java.sql.Date;
+
+public class Employee {
+
+	private int id;
+	private int employeeId;
+	private String employeeName;
+	private double employeeSalary;
+	private Date birthday;
+	
+	
+}

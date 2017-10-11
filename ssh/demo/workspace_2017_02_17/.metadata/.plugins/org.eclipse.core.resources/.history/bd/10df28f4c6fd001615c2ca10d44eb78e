@@ -1,0 +1,20 @@
+package com.djh;
+
+
+import junit.framework.TestCase;
+
+public class EmployeeTest extends TestCase {
+	
+	public void test(){
+		
+		//0
+		
+		//2
+		
+		//3
+		
+		//4
+		
+		//5
+	}
+}

@@ -1,0 +1,28 @@
+package com.djh.dao;
+
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import com.djh.beans.User;
+import com.djh.utils.UserUtils;
+
+public class UserDAO{
+	
+	private String URI = "com.djh.beans.userMapper";
+	public User getUserById(int id) throws IOException{
+		SqlSession session = UserUtils.getSqlSession();
+		User user = session.selectOne(URI + ".selectUser",id);
+		return user;
+	}
+	
+	public List<User> getAllUser(){
+		List<User> users = UserUtils.getSqlSession().selectList(URI + "")
+	}
+}

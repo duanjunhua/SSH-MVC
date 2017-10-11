@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 方式一：
+		嵌套结果：使用嵌套结果映射来处理重复的联合结果的子集 封装联表查询的数据(去除重复的数据) 
+		select * from class c, teacher t where c.teacher_id=t.t_id and c.c_id=1 
+-->
+
+<mapper namespaces="com.djh.test.demo1.ClassesMapper">
+	<select id="getClass" parameterType="int" resultType="ClassResultMap">
+		select * from class c, teacher t where c.teacher_id=t.t_id and c.c_id=#{id}
+	</select>
+	<reslutMap type="_Classes" id="ClassResultMap">
+		<id property="id" column="c_id" />
+		<result property="name" column="c_name" />
+		<!-- 关联表 -->
+		<association property="teacher" column="teacher_id" javaType="_Teacher"></association>
+	</reslutMap>
+</mapper>

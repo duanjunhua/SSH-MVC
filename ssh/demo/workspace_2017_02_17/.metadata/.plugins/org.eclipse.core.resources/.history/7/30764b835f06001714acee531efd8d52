@@ -1,0 +1,6 @@
+package com.djh.user;
+
+public interface UserMapper {
+
+	public int inserUser(UserMapper user);
+}

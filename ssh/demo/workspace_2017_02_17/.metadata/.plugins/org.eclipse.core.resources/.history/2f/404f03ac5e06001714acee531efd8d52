@@ -1,0 +1,7 @@
+package com.djh.utils;
+
+public class UserUtils {
+
+	String resource = "mybatis.xml";
+	String URI = "com.djh.beans.userMapper";
+}

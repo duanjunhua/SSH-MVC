@@ -1,0 +1,55 @@
+package com.djh.upload;
+
+import java.io.File;
+
+import javax.servlet.ServletContext;
+
+import org.apache.struts2.ServletActionContext;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class FileUpload extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private File ppt;
+	private String pptContentType;
+	private String pptFileName;
+
+	public File getPpt() {
+		return ppt;
+	}
+
+	public void setPpt(File ppt) {
+		this.ppt = ppt;
+	}
+
+	public String getPptContentType() {
+		return pptContentType;
+	}
+
+	public void setPptContentType(String pptContentType) {
+		this.pptContentType = pptContentType;
+	}
+
+	public String getPptFileName() {
+		return pptFileName;
+	}
+
+	public void setPptFileName(String pptFileName) {
+		this.pptFileName = pptFileName;
+	}
+
+	@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(ppt + "\n" + pptContentType + "\n" + pptFileName);
+		
+		ServletContext servletContext = ServletActionContext.getServletContext();
+		
+		return SUCCESS;
+	}
+}

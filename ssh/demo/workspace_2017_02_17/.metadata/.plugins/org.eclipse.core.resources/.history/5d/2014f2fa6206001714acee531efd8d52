@@ -1,0 +1,24 @@
+package com.djh.dao;
+
+import java.io.IOException;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.djh.beans.User;
+import com.djh.user.inter.UserMapper;
+import com.djh.utils.UserUtils;
+
+/**
+ * 通过注解的形式来操作数据库
+ * @author Michael
+ *
+ */
+public class MapperUserDAO {
+	
+	public User getUserById(int id) throws IOException{
+		SqlSession session = UserUtils.getSqlSession();
+		UserMapper mapper = session.getMapper(UserMapper.class);
+		User user = mapper.getUserById(id);
+		return user;
+	}
+}

@@ -1,0 +1,48 @@
+package com.djh.upload;
+
+import java.io.File;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class FileUpload extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private File ppt;
+	private String pptContextType;
+	private String pptName;
+
+	public File getPpt() {
+		return ppt;
+	}
+
+	public void setPpt(File ppt) {
+		this.ppt = ppt;
+	}
+
+	public String getPptContextType() {
+		return pptContextType;
+	}
+
+	public void setPptContextType(String pptContextType) {
+		this.pptContextType = pptContextType;
+	}
+
+	public String getPptName() {
+		return pptName;
+	}
+
+	public void setPptName(String pptName) {
+		this.pptName = pptName;
+	}
+
+	@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println(upFile + "\n" + upFileContextType + "\n" + upFileName);
+		return SUCCESS;
+	}
+}

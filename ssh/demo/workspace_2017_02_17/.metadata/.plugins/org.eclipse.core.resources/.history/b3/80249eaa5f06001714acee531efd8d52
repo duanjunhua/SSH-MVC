@@ -1,0 +1,9 @@
+package com.djh.user;
+
+import org.apache.ibatis.annotations.Insert;
+
+public interface UserMapper {
+
+	@Insert("insert into users(name,age) values(#{name},#{age})")
+	public int inserUser(UserMapper user);
+}

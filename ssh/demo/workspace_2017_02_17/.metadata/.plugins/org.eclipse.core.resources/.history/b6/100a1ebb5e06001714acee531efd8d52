@@ -1,0 +1,21 @@
+package com.djh.utils;
+
+import java.io.Reader;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class UserUtils {
+
+	String resource = "mybatis.xml";
+	String URI = "com.djh.beans.userMapper";
+	
+	public static SqlSession getSqlSession(){
+		Reader reader = Resources.getResourceAsReader(resource);
+		SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
+		SqlSession session = factory.openSession();
+		return session;
+	}
+}

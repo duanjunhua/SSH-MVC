@@ -1,0 +1,7 @@
+<classpath>
+  <container id="struts2_demo_2017_02_17_01!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/git/repository/personal-project/demo/workspace_2017_02_17/struts2_demo_2017_02_17_01/WebContent/WEB-INF/lib/struts2-core-2.3.20.jar">
+      <source-attachment-path>F:/Java开发工具包/JAR包/struts-2.3.20-all.zip</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

@@ -1,0 +1,30 @@
+package com.djh.dao;
+
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import com.djh.beans.User;
+
+public class UserDAO{
+	
+	//加载mybatis的配置文件(它也加载关联的映射文件)
+	//构建sqlSession工厂
+	public User getUserById(int id) throws IOException{
+		Reader reader = Resources.getResourceAsReader(resource);
+		SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
+		SqlSession session = factory.openSession();
+		User user = session.selectOne(URI + ".selectUser",id);
+		return user;
+	}
+	
+	public List<User> getAllUser(){
+		List<User> users = 
+	}
+}

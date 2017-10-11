@@ -1,0 +1,27 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="age">
+		<!-- short-circuit表示当前验证没有通过时，则下面的验证跳过， 默认为false -->
+		<field-validator type="conversion" short-circuit="true">
+			<message>Age should be a number</message>
+		</field-validator>
+		<field-validator type="int">
+			<param name="min">20</param>
+			<param name="max">50</param>
+			<message>The age should between ${min} and ${max}</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="email">
+			<param name="regexExpression">${\\b^['_a-z0-9-\\+](\\.['_a-z0-9-\\+])@[a-z0-9-](\\.[a-z0-9-])}</param>
+			<message>Must provide a valid email</message>
+		</field-validator>
+		<field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>Email is required</message>
+       </field-validator>
+	</field>
+</validators>

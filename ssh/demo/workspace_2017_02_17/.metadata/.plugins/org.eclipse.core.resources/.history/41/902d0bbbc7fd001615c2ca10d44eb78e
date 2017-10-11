@@ -1,0 +1,28 @@
+package com.djh;
+
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+import junit.framework.TestCase;
+
+public class EmployeeTest extends TestCase {
+	
+	public void test(){
+		
+		//0
+		SessionFactory sessionFactory = null;
+		//2
+		Configuration configuration = new Configuration().configure();
+		ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().build();
+		//3
+		sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+		//4
+		Session session = sessionFactory.openSession();
+		//5
+	}
+}

@@ -1,0 +1,5 @@
+package com.djh.user;
+
+public interface UserMapper {
+
+}

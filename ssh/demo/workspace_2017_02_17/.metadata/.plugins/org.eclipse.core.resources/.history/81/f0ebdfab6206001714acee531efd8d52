@@ -1,0 +1,13 @@
+package com.djh.dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.djh.beans.User;
+import com.djh.utils.UserUtils;
+
+public class MapperUserDAO {
+	
+	public User getUserById(int id){
+		SqlSession session = UserUtils.getSqlSession();
+	}
+}

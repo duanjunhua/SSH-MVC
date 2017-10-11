@@ -1,0 +1,35 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+	<field name="age">
+		<field-validator type="int">
+			<param name="min">20</param>
+			<param name="max">50</param>
+			<message>The age should between ${min} and ${max}</message>
+		</field-validator>
+	</field>
+	<!-- Plain Validator Syntax -->
+	<validators>
+		<validator type="email">
+			<param name="fieldName">myEmail</param>
+			<message>Must provide a valid email</message>
+		</validator>
+	</validators>
+
+	<field name="enail">
+		<field-validator type="email">
+			<message>Must provide a valid email</message>
+		</field-validator>
+	</field>
+
+	<field name="enail">
+		<field-validator type="email">
+			<param name="regexExpression">${\\b^['_a-z0-9-\\+](\\.['_a-z0-9-\\+])@[a-z0-9-](\\.[a-z0-9-])}</param> <!-- will be evaluated as: String getEmailPattern() -->
+			<param name="caseSensitiveExpression">${emailCaseSensitive}</param> <!-- will be evaluated as: boolean getEmailCaseSensitive() -->
+			<param name="trimExpression">${trimEmail}</param> <!-- will be evaluated as: boolean getTrimEmail() -->
+			<message>Must provide a valid email</message>
+		</field-validator>
+	</field>
+</validators>

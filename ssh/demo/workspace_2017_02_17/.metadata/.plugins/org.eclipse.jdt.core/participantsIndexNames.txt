@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+D:\git\repository\personal-project\demo\workspace_2017_02_17\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1578686728.index
+\struts2_demo_2017_02_17_01\src
+D:\git\repository\personal-project\demo\workspace_2017_02_17\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3631629262.index
+\struts2_demo_2017_02_17_01\src
+D:\git\repository\personal-project\demo\workspace_2017_02_17\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4237398615.index
+\fileuploadanddownload\src
+D:\git\repository\personal-project\demo\workspace_2017_02_17\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3705308765.index
+\strutsValidate\src

@@ -1,0 +1,9 @@
+package com.djh.test.demo1;
+
+public class Classes {
+
+	private int id;
+	private String name;
+	private Teacher teacher;
+	
+}

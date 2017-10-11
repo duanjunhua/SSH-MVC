@@ -1,0 +1,40 @@
+package com.djh.user.inter.impl;
+
+import java.util.List;
+
+import com.djh.beans.User;
+import com.djh.user.inter.UserMapper;
+
+public class UserMapperImpl implements UserMapper {
+
+	@Override
+	public int inserUser(UserMapper user) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteUserById(int id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateUser(User user) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public User getUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<User> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.djh.user.inter.impl;
+
+import com.djh.user.inter.UserMapper;
+
+public class UserMapperImpl implements UserMapper {
+
+}

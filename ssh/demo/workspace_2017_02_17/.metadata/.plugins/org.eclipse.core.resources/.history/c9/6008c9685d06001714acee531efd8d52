@@ -1,0 +1,8 @@
+package com.djh.dao;
+
+public class UserDAO {
+	
+	public User getUserById(int id){
+		
+	}
+}

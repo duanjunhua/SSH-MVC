@@ -1,0 +1,20 @@
+package com.djh.dao;
+
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+public class UserDAO {
+	
+	String resource = "mybatis.xml";
+	//加载mybatis的配置文件(它也加载关联的映射文件)
+	Reader reader = Resources.getResourceAsReader(resource);
+	//构建sqlSession工厂
+	SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
+	public User getUserById(int id){
+		SqlSession session = ses
+		return user;
+	}
+}

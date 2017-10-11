@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 18, 2017 4:17:15 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="com.djh.test.mapp">
+    <class name="Worker" table="WORKER">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        
+        <component name="Pay">
+        	<property name="monthlyPay" column="MONTHLY_PAY"></property>
+        	<property name="yearlyPay" column="YEARLY_PAY"></property>
+        	<property name="vocationPay" column="VOCATION_PAY"></property>
+        </component>
+        
+        <!--
+	        <many-to-one name="pay" class="com.djh.test.mapp.Pay" fetch="join">
+	            <column name="PAY" />
+	        </many-to-one>
+	       -->
+    </class>
+</hibernate-mapping>

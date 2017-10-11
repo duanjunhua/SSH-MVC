@@ -1,0 +1,22 @@
+package com.djh;
+
+
+import org.hibernate.SessionFactory;
+
+import junit.framework.TestCase;
+
+public class EmployeeTest extends TestCase {
+	
+	public void test(){
+		
+		//0
+		SessionFactory sessionFactory = null;
+		//2
+		
+		//3
+		
+		//4
+		
+		//5
+	}
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 方式一：
+		嵌套结果：使用嵌套结果映射来处理重复的联合结果的子集 封装联表查询的数据(去除重复的数据) 
+		select * from class c, teacher t where c.teacher_id=t.t_id and c.c_id=1 
+-->
+
+<mapper>
+	
+</mapper>

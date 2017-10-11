@@ -1,0 +1,8 @@
+package com.djh.dao;
+
+public class MapperUserDAO {
+	
+	public int getUserById(int id){
+		
+	}
+}

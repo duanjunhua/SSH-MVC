@@ -1,0 +1,15 @@
+package com.djh.validate;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ValidationAction extends ActionSupport {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private int age;
+	private String email;
+
+}
