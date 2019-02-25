@@ -1,12 +1,12 @@
 package com.cons;
 
-import com.cons.service.Function;
-import com.cons.service.FunctionService;
+import com.cons.service.Provider;
+import com.cons.service.ProviderService;
 
 public class Consumer {
 
 	public static void main(String[] args) {
-		Function function = new FunctionService().getFunctionPort();
-		System.out.println(function.transWords("Hello World!"));
+		Provider provider = new ProviderService().getProviderPort();
+		System.out.println(provider.transWords("Hello World!"));
 	}
 }
